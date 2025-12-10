@@ -1,0 +1,6 @@
+genrule(
+  name = "hello",
+  srcs = [],
+  outs = ["hello.txt"],
+  cmd = "echo 'worldss' > $@",
+)
