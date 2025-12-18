@@ -9,5 +9,5 @@ rust_binary(
 
 process_output(
     name = "processed",
-    target_to_process = ":bin_with_warnings_and_errors",
+    deps = [":bin_with_warnings_and_errors"],
 )
