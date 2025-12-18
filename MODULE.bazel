@@ -1,9 +1,2 @@
 module(name="repro")
 
-bazel_dep(name = "aspect_bazel_lib", version = "1.40.2")
-
-good = use_repo_rule("//:extensions.bzl", "good_repo_rule")
-bad = use_repo_rule("//:extensions.bzl", "bad_repo_rule")
-good(name = "good_repo")
-bad(name = "bad_repo")
-
